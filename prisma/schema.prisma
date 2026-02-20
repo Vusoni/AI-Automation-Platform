@@ -96,6 +96,7 @@ enum CredentialType {
   GEMINI
 }
 
+// Creating model workflow for background jobs
 model Workflow {
   id String @id @default(cuid())
   name String
