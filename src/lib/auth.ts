@@ -30,15 +30,16 @@ export const auth = betterAuth({
         checkout({
           products: [
             {
-              productId: "f81be8a8-45e1-4e45-a1e9-b9d3fd79f814",
-              slug: "pro",
-            }
+              // POLAR PRODUCT ID
+              productId: "d33004d1-4494-4b4f-b04c-b672fc33496a",
+              slug: "Lunvia-Pro", // Custom slug for easy reference in Checkout URL, e.g. /checkout/Lunvia-Pro
+            },
           ],
           successUrl: process.env.POLAR_SUCCESS_URL,
           authenticatedUsersOnly: true,
         }),
         portal(),
       ],
-    })
-  ]
+    }),
+  ],
 });
